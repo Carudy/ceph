@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: yes
+  tasks:
+
+   - name: install the latest version of netstat
+     package:
+       name: net-tools
+       state: latest
