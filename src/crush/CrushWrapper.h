@@ -776,6 +776,7 @@ public:
    * @return 0 for success, negative on error
    */
   int swap_bucket(CephContext *cct, int src, int dst);
+  bool is_parent_of(int child, int p);
 
   /**
    * add a link to an existing bucket in the hierarchy to the new location
